@@ -6,12 +6,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hungry Monster</title>
-
+    <!-- Bootstrap and CSS file Link -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+    <nav class="navbar navbar-expand-sm justify-content-end mx-5">
+
+        <!-- Links -->
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Recipes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Blog</a>
+          </li>
+        </ul>
+      
+      </nav>
     <div class="container">
         <form class="col-md-6 m-auto py-5 form-class">
             <div class="input-group mb-3">
@@ -26,13 +45,18 @@
             <h2 id="food-name"></h2>
             <h4 id="ingredient-header"></h4>
             <ul id="ingredients-list">
-                
+                <li id="ingredient1"></li>
+                <li id="ingredient2"></li>
+                <li id="ingredient3"></li>
+                <li id="ingredient4"></li>
+                <li id="ingredient5"></li>
             </ul>
         </div>
         <div class="row" id="food-list">
 
         </div>
     </div>
+    <!-- JavaScript File Link -->
     <script src="script.js"></script>
 </body>
 

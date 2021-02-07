@@ -24,3 +24,23 @@ body{
     box-shadow: 5px 5px 10px lightgrey;
 
 }
+#ingredients-list{
+    display: none;
+}
+#food-image{
+    height: 300px;
+    width: 400px;
+    display: none;
+
+}
+#ingredient1{
+    margin-top: 10px;
+}
+#ingredient1, #ingredient2, #ingredient3, #ingredient4, #ingredient5{
+    font-weight: bold;
+}
+#ingredient-header{
+    color: midnightblue;
+    font-weight: bold;
+    margin-top: 10px;
+}
