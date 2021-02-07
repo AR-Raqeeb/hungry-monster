@@ -19,6 +19,7 @@ searchButton.addEventListener('click', function() {
         .then(data => {
             allData = data.meals;
             data.meals.map(x => {
+                // Creating div to show the food matched with searched keyword
                 const div = document.createElement("div");
                 div.className = "col-md-4 food-cart";
                 div.id = `${x.idMeal}`;
@@ -27,16 +28,16 @@ searchButton.addEventListener('click', function() {
                 const foodName = document.createElement("h4");
                 const foodImage = document.createElement('img');
                 foodImage.src = `${x.strMealThumb}`;
-                const node = document.createTextNode(`${x.strMeal}`);
+                const captureFoodName = document.createTextNode(`${x.strMeal}`);
 
-                foodName.appendChild(node);
+                foodName.appendChild(captureFoodName);
                 div.appendChild(foodImage);
                 div.appendChild(foodName);
 
                 return foodItems.appendChild(div);
             })
         })
-        searchBox.value = '';
+    searchBox.value = '';
 })
 const foodIngredient = id => {
     ingredientsList.style.display = 'block';
@@ -46,12 +47,12 @@ const foodIngredient = id => {
             foodImage.src = x.strMealThumb;
             foodName.innerText = x.strMeal;
             ingredientTitle.innerText = 'Ingredients';
-            
-           ingredient1.innerText = x.strIngredient1;
-           ingredient2.innerText = x.strIngredient2;
-           ingredient3.innerText = x.strIngredient3;
-           ingredient4.innerText = x.strIngredient4;
-           ingredient5.innerText = x.strIngredient5;
+
+            ingredient1.innerText = x.strIngredient1;
+            ingredient2.innerText = x.strIngredient2;
+            ingredient3.innerText = x.strIngredient3;
+            ingredient4.innerText = x.strIngredient4;
+            ingredient5.innerText = x.strIngredient5;
         }
     })
 }

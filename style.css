@@ -1,7 +1,19 @@
-body{
+#top-section {
+    display: flex;
+}
+
+#logo {
+    height: 75px;
+    width: 75px;
+    border-radius: 50px;
+    margin-left: 25px;
+}
+
+body {
     margin: 0;
 }
-.container{
+
+.container {
     margin: auto;
     max-width: 800px;
     display: flex;
@@ -10,36 +22,46 @@ body{
     justify-content: center;
     text-align: center;
 }
-.form-class{
+
+.form-class {
     display: flex;
 }
-.food-cart img{
+
+.food-cart img {
     width: 200px;
     height: 200px;
 }
-.food-cart{
+
+.food-cart {
     border-radius: 10px;
     margin: 20px 0px;
     padding: 5px;
     box-shadow: 5px 5px 10px lightgrey;
-
 }
-#ingredients-list{
+
+#ingredients-list {
     display: none;
 }
-#food-image{
+
+#food-image {
     height: 300px;
     width: 400px;
     display: none;
-
 }
-#ingredient1{
+
+#ingredient1 {
     margin-top: 10px;
 }
-#ingredient1, #ingredient2, #ingredient3, #ingredient4, #ingredient5{
+
+#ingredient1,
+#ingredient2,
+#ingredient3,
+#ingredient4,
+#ingredient5 {
     font-weight: bold;
 }
-#ingredient-header{
+
+#ingredient-header {
     color: midnightblue;
     font-weight: bold;
     margin-top: 10px;
